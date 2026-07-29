@@ -41,8 +41,8 @@ It helps you validate, score, and report on conversational AI interactions acros
 
 ```bash
 # Clone the repository
-git clone https://github.com/agenteval/agenteval.git
-cd agenteval
+git clone https://github.com/maddog22coder/agent-eval.git
+cd agent-eval
 
 # Install in development mode
 pip install -e ".[dev]"
