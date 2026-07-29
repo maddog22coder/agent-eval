@@ -41,10 +41,10 @@ dev = [
 agenteval = "agenteval.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/agenteval/agenteval"
-Documentation = "https://github.com/agenteval/agenteval/tree/main/docs"
-Repository = "https://github.com/agenteval/agenteval"
-Issues = "https://github.com/agenteval/agenteval/issues"
+Homepage = "https://github.com/maddog22coder/agent-eval"
+Documentation = "https://github.com/maddog22coder/agent-eval/tree/main/docs"
+Repository = "https://github.com/maddog22coder/agent-eval"
+Issues = "https://github.com/maddog22coder/agent-eval/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
