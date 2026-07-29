@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "conversation_id": "es-ecommerce-001",
+    "language": "es",
+    "scenario": "Pregunta sobre Pedido en Línea",
+    "domain": "ecommerce",
+    "created_at": "2025-01-15T13:00:00Z",
+    "evaluator": "agenteval-example",
+    "tags": ["ecommerce", "pedido", "rastreo", "español"]
+  },
+  "system_prompt": "Eres un agente de atención al cliente de una tienda en línea. Ayuda a los clientes a rastrear pedidos, responde preguntas sobre productos y asiste con devoluciones.",
+  "turns": [
+    {
+      "role": "user",
+      "content": "¿Dónde está mi pedido? Lo hice hace cinco días y no he recibido ninguna actualización.",
+      "turn_number": 1
+    },
+    {
+      "role": "agent",
+      "content": "Entiendo tu preocupación. Con gusto verifico el estado de tu pedido. ¿Podrías compartirme el número de pedido o el correo electrónico asociado a tu cuenta?",
+      "turn_number": 2
+    },
+    {
+      "role": "user",
+      "content": "El número de pedido es 67890.",
+      "turn_number": 3
+    },
+    {
+      "role": "agent",
+      "content": "Gracias. He encontrado el pedido 67890. Fue enviado hace dos días y actualmente está en tránsito. Según la información del transportista, debería llegar en los próximos 1 a 2 días hábiles.",
+      "turn_number": 4
+    },
+    {
+      "role": "user",
+      "content": "¿Puedo cambiar la dirección de entrega? No voy a estar en casa.",
+      "turn_number": 5
+    },
+    {
+      "role": "agent",
+      "content": "Como el pedido ya está en tránsito, no puedo cambiar la dirección de entrega directamente. Sin embargo, puedo solicitar la retención en el punto de recogida más cercano, o puedes reprogramar la entrega a través del sitio del transportista. ¿Quieres que gestione la retención?",
+      "turn_number": 6
+    },
+    {
+      "role": "user",
+      "content": "Sí, por favor gestiona la retención en el punto más cercano.",
+      "turn_number": 7
+    },
+    {
+      "role": "agent",
+      "content": "¡Hecho! He solicitado la retención en el punto de recogida más cercano. Recibirás una notificación con la dirección y los horarios disponibles cuando llegue. ¿Hay algo más en que pueda ayudarte?",
+      "turn_number": 8
+    }
+  ],
+  "expected_outcome": {
+    "task_completed": true,
+    "summary": "El cliente rastreó el pedido 67890 y solicitó retención en punto de recogida."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "conversation_id": "es-support-001",
+    "language": "es",
+    "scenario": "Soporte al Cliente",
+    "domain": "customer_support",
+    "created_at": "2025-01-15T12:00:00Z",
+    "evaluator": "agenteval-example",
+    "tags": ["soporte", "atención", "español"]
+  },
+  "system_prompt": "Eres un agente de soporte al cliente. Ayuda a los clientes con sus dudas, resuelve problemas y escala cuando sea necesario.",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Recibí mi pedido pero uno de los artículos llegó dañado. ¿Qué puedo hacer?",
+      "turn_number": 1
+    },
+    {
+      "role": "agent",
+      "content": "Lamento mucho escuchar eso. Con gusto te ayudo a resolverlo. ¿Podrías proporcionarme tu número de pedido para revisar los detalles?",
+      "turn_number": 2
+    },
+    {
+      "role": "user",
+      "content": "Mi número de pedido es 76543.",
+      "turn_number": 3
+    },
+    {
+      "role": "agent",
+      "content": "Gracias. He localizado el pedido 76543. ¿Podrías indicarme cuál artículo llegó dañado y describir brevemente el daño? Esto nos ayudará a procesar tu solicitud rápidamente.",
+      "turn_number": 4
+    },
+    {
+      "role": "user",
+      "content": "Es el jarrón de cerámica. Llegó con una grieta en la base.",
+      "turn_number": 5
+    },
+    {
+      "role": "agent",
+      "content": "Entiendo, y me disculpo por la molestia. Para el jarrón de cerámica con la grieta en la base, puedo ofrecerte un reemplazo o un reembolso completo. ¿Cuál prefieres?",
+      "turn_number": 6
+    },
+    {
+      "role": "user",
+      "content": "Prefiero el reemplazo, por favor.",
+      "turn_number": 7
+    },
+    {
+      "role": "agent",
+      "content": "¡Listo! He programado el envío de un nuevo jarrón de cerámica. Debería llegar en 3 a 5 días hábiles. No necesitas devolver el artículo dañado. ¿Puedo ayudarte con algo más?",
+      "turn_number": 8
+    }
+  ],
+  "expected_outcome": {
+    "task_completed": true,
+    "summary": "El cliente reportó un jarrón de cerámica dañado y se gestionó el reemplazo."
+  }
+}

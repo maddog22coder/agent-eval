@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "conversation_id": "ptbr-restaurant-001",
+    "language": "pt-br",
+    "scenario": "Reserva em Restaurante",
+    "domain": "restaurant",
+    "created_at": "2025-01-15T11:00:00Z",
+    "evaluator": "agenteval-example",
+    "tags": ["reserva", "restaurante", "português"]
+  },
+  "system_prompt": "Você é um assistente de reservas de um restaurante. Ajude os clientes a fazer reservas, forneça informações sobre o cardápio e responda perguntas sobre o restaurante.",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Gostaria de fazer uma reserva para jantar hoje à noite para quatro pessoas.",
+      "turn_number": 1
+    },
+    {
+      "role": "agent",
+      "content": "Boa noite! Com prazer ajudo com a reserva para quatro pessoas. Qual horário você prefere? Temos disponibilidade a partir das 18:00.",
+      "turn_number": 2
+    },
+    {
+      "role": "user",
+      "content": "Às 19:30 seria perfeito. Vocês têm mesa perto da janela?",
+      "turn_number": 3
+    },
+    {
+      "role": "agent",
+      "content": "Sim, temos uma mesa junto à janela disponível às 19:30 para quatro pessoas. Gostaria que eu reserve? Posso anotar o nome para a reserva?",
+      "turn_number": 4
+    },
+    {
+      "role": "user",
+      "content": "Sim, por favor. O nome é Fernanda Silva.",
+      "turn_number": 5
+    },
+    {
+      "role": "agent",
+      "content": "Reserva confirmada, Fernanda. Mesa para quatro junto à janela às 19:30 hoje à noite, no nome Silva. Alguma restrição alimentar ou pedido especial que devamos anotar?",
+      "turn_number": 6
+    },
+    {
+      "role": "user",
+      "content": "Uma pessoa do grupo é vegetariana. Só isso.",
+      "turn_number": 7
+    },
+    {
+      "role": "agent",
+      "content": "Anotado! Temos ótimas opções vegetarianas no cardápio. Sua reserva está pronta — mesa para quatro, janela, 19:30, nome Silva, com observação sobre dieta vegetariana. Esperamos vocês!",
+      "turn_number": 8
+    }
+  ],
+  "expected_outcome": {
+    "task_completed": true,
+    "summary": "Cliente reservou mesa para quatro junto à janela às 19:30 com observação de dieta vegetariana."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "conversation_id": "ptbr-support-001",
+    "language": "pt-br",
+    "scenario": "Suporte ao Cliente",
+    "domain": "customer_support",
+    "created_at": "2025-01-15T12:00:00Z",
+    "evaluator": "agenteval-example",
+    "tags": ["suporte", "atendimento", "português"]
+  },
+  "system_prompt": "Você é um agente de suporte ao cliente. Ajude os clientes com suas dúvidas, resolva problemas e encaminhe quando necessário.",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Recebi meu pedido mas um dos itens veio danificado. O que posso fazer?",
+      "turn_number": 1
+    },
+    {
+      "role": "agent",
+      "content": "Lamento muito pelo inconveniente. Vou ajudar a resolver isso para você. Poderia me informar o número do seu pedido?",
+      "turn_number": 2
+    },
+    {
+      "role": "user",
+      "content": "O número do pedido é 87654.",
+      "turn_number": 3
+    },
+    {
+      "role": "agent",
+      "content": "Obrigada. Localizei o pedido 87654. Poderia me dizer qual item veio danificado e descrever brevemente o problema? Isso vai nos ajudar a processar sua solicitação rapidamente.",
+      "turn_number": 4
+    },
+    {
+      "role": "user",
+      "content": "É o vaso de cerâmica. Chegou com uma rachadura na base.",
+      "turn_number": 5
+    },
+    {
+      "role": "agent",
+      "content": "Entendo, e peço desculpas novamente. Para o vaso de cerâmica com rachadura na base, posso oferecer uma troca por um novo ou o reembolso completo. Qual opção você prefere?",
+      "turn_number": 6
+    },
+    {
+      "role": "user",
+      "content": "Prefiro a troca, por favor.",
+      "turn_number": 7
+    },
+    {
+      "role": "agent",
+      "content": "Pronto! Agendei o envio de um novo vaso de cerâmica para você. Deve chegar em 3 a 5 dias úteis. Não é necessário devolver o item danificado. Posso ajudar com mais alguma coisa?",
+      "turn_number": 8
+    }
+  ],
+  "expected_outcome": {
+    "task_completed": true,
+    "summary": "Cliente relatou vaso de cerâmica danificado e uma troca foi providenciada."
+  }
+}

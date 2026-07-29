@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "conversation_id": "ptbr-salon-001",
+    "language": "pt-br",
+    "scenario": "Agendamento em Salão de Beleza",
+    "domain": "salon",
+    "created_at": "2025-01-15T10:00:00Z",
+    "evaluator": "agenteval-example",
+    "tags": ["agendamento", "salão", "português"]
+  },
+  "system_prompt": "Você é uma recepcionista simpática de um salão de beleza. Ajude os clientes a agendar horários, responda perguntas sobre serviços e forneça informações de preços.",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Oi, gostaria de agendar um corte de cabelo para sábado.",
+      "turn_number": 1
+    },
+    {
+      "role": "agent",
+      "content": "Olá! Fico feliz em ajudar com o agendamento do seu corte de cabelo para sábado. Temos vários horários disponíveis. Você prefere de manhã ou à tarde?",
+      "turn_number": 2
+    },
+    {
+      "role": "user",
+      "content": "De manhã, por volta das 10 horas, se possível.",
+      "turn_number": 3
+    },
+    {
+      "role": "agent",
+      "content": "Temos o horário das 10:00 disponível neste sábado. Você gostaria de um corte simples ou também deseja algum serviço adicional, como lavagem e escova?",
+      "turn_number": 4
+    },
+    {
+      "role": "user",
+      "content": "Só o corte simples, por favor. Meu nome é Carlos.",
+      "turn_number": 5
+    },
+    {
+      "role": "agent",
+      "content": "Seu agendamento está confirmado, Carlos. Corte simples neste sábado às 10:00. Por favor, chegue alguns minutos antes do horário. Posso ajudar com mais alguma coisa?",
+      "turn_number": 6
+    },
+    {
+      "role": "user",
+      "content": "Não, é só isso. Obrigado!",
+      "turn_number": 7
+    },
+    {
+      "role": "agent",
+      "content": "De nada, Carlos! Esperamos você no sábado. Tenha um ótimo dia!",
+      "turn_number": 8
+    }
+  ],
+  "expected_outcome": {
+    "task_completed": true,
+    "summary": "Cliente agendou com sucesso um corte simples para sábado às 10:00."
+  }
+}

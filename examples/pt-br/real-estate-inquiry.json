@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "conversation_id": "ptbr-realestate-001",
+    "language": "pt-br",
+    "scenario": "Consulta Imobiliária",
+    "domain": "real_estate",
+    "created_at": "2025-01-15T14:00:00Z",
+    "evaluator": "agenteval-example",
+    "tags": ["imobiliária", "aluguel", "apartamento", "português"]
+  },
+  "system_prompt": "Você é um assistente virtual imobiliário. Ajude compradores e locatários a encontrar imóveis, agendar visitas e responder perguntas sobre listagens.",
+  "turns": [
+    {
+      "role": "user",
+      "content": "Estou procurando um apartamento de dois quartos para alugar no centro. O que vocês têm disponível?",
+      "turn_number": 1
+    },
+    {
+      "role": "agent",
+      "content": "Bem-vindo! Fico feliz em ajudar na busca por um apartamento de dois quartos no centro. Poderia compartilhar sua faixa de orçamento e alguma necessidade específica, como vaga de garagem, aceita animais, ou data de mudança?",
+      "turn_number": 2
+    },
+    {
+      "role": "user",
+      "content": "Meu orçamento é de até R$ 3.000 por mês. Preciso que aceite animais e gostaria de me mudar até março.",
+      "turn_number": 3
+    },
+    {
+      "role": "agent",
+      "content": "Obrigado pelos detalhes. Dentro do seu orçamento de até R$ 3.000, que aceita animais e com disponibilidade até março, temos três opções no centro. Gostaria que eu descreva brevemente ou prefere que eu agende visitas?",
+      "turn_number": 4
+    },
+    {
+      "role": "user",
+      "content": "Descreva brevemente aqui, por favor.",
+      "turn_number": 5
+    },
+    {
+      "role": "agent",
+      "content": "Aqui estão as três opções:\n\n1. Edifício Vista Park — 2 quartos, 1 banheiro, 75 m², R$ 2.600/mês, aceita animais, disponível em fevereiro.\n2. Central Lofts — 2 quartos, 2 banheiros, 85 m², R$ 2.900/mês, aceita animais com área pet, disponível em março.\n3. Residencial Rio — 2 quartos, 1 banheiro, 68 m², R$ 2.400/mês, aceita animais, disponível em fevereiro.\n\nGostaria de agendar visitas em algum deles?",
+      "turn_number": 6
+    },
+    {
+      "role": "user",
+      "content": "Quero visitar o Central Lofts. Pode ser sábado de manhã?",
+      "turn_number": 7
+    },
+    {
+      "role": "agent",
+      "content": "Agendado! Visita ao Central Lofts neste sábado de manhã. Vou confirmar o horário exato com o proprietário e entro em contato com você. Posso ajudar com mais alguma coisa?",
+      "turn_number": 8
+    }
+  ],
+  "expected_outcome": {
+    "task_completed": true,
+    "summary": "Cliente recebeu descrições de apartamentos e agendou visita ao Central Lofts para sábado."
+  }
+}

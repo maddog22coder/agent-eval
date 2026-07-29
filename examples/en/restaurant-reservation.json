@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "conversation_id": "en-restaurant-001",
+    "language": "en",
+    "scenario": "Restaurant Reservation",
+    "domain": "restaurant",
+    "created_at": "2025-01-15T11:00:00Z",
+    "evaluator": "agenteval-example",
+    "tags": ["reservation", "dining", "english"]
+  },
+  "system_prompt": "You are a polite reservation assistant for a restaurant. Help customers make reservations, provide menu information, and answer questions about the restaurant.",
+  "turns": [
+    {
+      "role": "user",
+      "content": "I'd like to make a reservation for dinner tonight for four people.",
+      "turn_number": 1
+    },
+    {
+      "role": "agent",
+      "content": "Good evening! I'd be happy to help you with a dinner reservation for four. What time would you prefer? We have availability from 6:00 PM onwards.",
+      "turn_number": 2
+    },
+    {
+      "role": "user",
+      "content": "7:30 PM would be perfect. Do you have any tables near the window?",
+      "turn_number": 3
+    },
+    {
+      "role": "agent",
+      "content": "Let me check for you. Yes, we have a window table available at 7:30 PM for four guests. Would you like me to reserve that for you? May I have your name for the reservation?",
+      "turn_number": 4
+    },
+    {
+      "role": "user",
+      "content": "Yes, please. The name is Jordan Mitchell.",
+      "turn_number": 5
+    },
+    {
+      "role": "agent",
+      "content": "Your reservation is confirmed, Jordan. A window table for four at 7:30 PM tonight under Mitchell. Do you have any dietary requirements or special requests we should note?",
+      "turn_number": 6
+    },
+    {
+      "role": "user",
+      "content": "One person in our group is vegetarian. That's all.",
+      "turn_number": 7
+    },
+    {
+      "role": "agent",
+      "content": "Noted! We have several excellent vegetarian options on our menu. Your reservation is all set — table for four, window seat, 7:30 PM tonight, under Mitchell, with a note about vegetarian dining. We look forward to welcoming you!",
+      "turn_number": 8
+    }
+  ],
+  "expected_outcome": {
+    "task_completed": true,
+    "summary": "Customer reserved a window table for four at 7:30 PM with a vegetarian dining note."
+  }
+}
